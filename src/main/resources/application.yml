@@ -1,0 +1,19 @@
+server :
+  port : 8081
+
+app :
+  name: spring-config-project
+  description: Microservice configuration
+
+my:
+  greeting: hello
+  list:
+    values: one,two,three
+
+db:
+  connection : "{connection : 'https://' , username : 'dummy user' , password : 'random password'}"
+  host : 127.0.0.1
+  port : 1200
+
+management:
+  endpoints.web.exposure.include : "*"
