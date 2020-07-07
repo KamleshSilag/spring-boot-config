@@ -11,13 +11,9 @@ my:
     values: one,two,three
 
 db:
-  connection : connection string here
-  host : 127.0.0.1
-  port : 1200
+  connection : test connection string here
+  host : 129.0.0.1
+  port : 2400
 
 management:
   endpoints.web.exposure.include : "*"
-
-spring:
-  profiles:
-    active:  test
