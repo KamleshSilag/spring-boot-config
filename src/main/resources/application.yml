@@ -5,19 +5,12 @@ app :
   name: spring-config-project
   description: Microservice configuration
 
-my:
-  greeting: hello
-  list:
-    values: one,two,three
-
-db:
-  connection : connection string here
-  host : 127.0.0.1
-  port : 1200
-
 management:
   endpoints.web.exposure.include : "*"
 
+
+spring.cloud.config.uri: http://localhost:8888
+
 spring:
-  profiles:
-    active:  test
+  application:
+    name: spring-boot-config
